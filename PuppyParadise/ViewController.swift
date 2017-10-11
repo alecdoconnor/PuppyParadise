@@ -7,11 +7,12 @@
 //
 
 import UIKit
+import AOModalStatus
 
 class ViewController: UIViewController {
 
     @IBAction func saveTapped(_ sender: Any) {
-        
+        presentModalStatusView()
     }
     
     override func viewDidLoad() {
@@ -23,7 +24,14 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    func presentModalStatusView() {
+        let modalView = AOModalStatusView(frame: self.view.bounds)
+        let downloadImage = UIImage(named: "download") ?? UIImage()
+        modalView.set(image: downloadImage)
+        modalView.set(headline: "Downloading")
+        view.addSubview(modalView)
+    }
 
 }
 

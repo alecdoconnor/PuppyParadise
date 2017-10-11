@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		706B0E281F8DE589002BA528 /* AOModalStatus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 706B0E271F8DE584002BA528 /* AOModalStatus.framework */; };
+		706B0E291F8DE589002BA528 /* AOModalStatus.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 706B0E271F8DE584002BA528 /* AOModalStatus.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		70AC962D1F8DD2B500960B51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AC962C1F8DD2B500960B51 /* AppDelegate.swift */; };
 		70AC962F1F8DD2B500960B51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AC962E1F8DD2B500960B51 /* ViewController.swift */; };
 		70AC96321F8DD2B500960B51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70AC96301F8DD2B500960B51 /* Main.storyboard */; };
@@ -14,7 +16,39 @@
 		70AC96371F8DD2B500960B51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70AC96351F8DD2B500960B51 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		706B0E261F8DE584002BA528 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 706B0E221F8DE584002BA528 /* AOModalStatus.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 70AC95F31F8DC32F00960B51;
+			remoteInfo = AOModalStatus;
+		};
+		706B0E2A1F8DE589002BA528 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 706B0E221F8DE584002BA528 /* AOModalStatus.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 70AC95F21F8DC32F00960B51;
+			remoteInfo = AOModalStatus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		706B0E211F8DD68B002BA528 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				706B0E291F8DE589002BA528 /* AOModalStatus.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		706B0E221F8DE584002BA528 /* AOModalStatus.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AOModalStatus.xcodeproj; path = PuppyParadise/Frameworks/AOModalStatus.xcodeproj; sourceTree = "<group>"; };
 		70AC96291F8DD2B500960B51 /* PuppyParadise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PuppyParadise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70AC962C1F8DD2B500960B51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70AC962E1F8DD2B500960B51 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,15 +63,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				706B0E281F8DE589002BA528 /* AOModalStatus.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		706B0E231F8DE584002BA528 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				706B0E271F8DE584002BA528 /* AOModalStatus.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		70AC96201F8DD2B500960B51 = {
 			isa = PBXGroup;
 			children = (
+				706B0E221F8DE584002BA528 /* AOModalStatus.xcodeproj */,
 				70AC962B1F8DD2B500960B51 /* PuppyParadise */,
 				70AC962A1F8DD2B500960B51 /* Products */,
 			);
@@ -74,10 +118,12 @@
 				70AC96251F8DD2B500960B51 /* Sources */,
 				70AC96261F8DD2B500960B51 /* Frameworks */,
 				70AC96271F8DD2B500960B51 /* Resources */,
+				706B0E211F8DD68B002BA528 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				706B0E2B1F8DE589002BA528 /* PBXTargetDependency */,
 			);
 			name = PuppyParadise;
 			productName = PuppyParadise;
@@ -111,12 +157,28 @@
 			mainGroup = 70AC96201F8DD2B500960B51;
 			productRefGroup = 70AC962A1F8DD2B500960B51 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 706B0E231F8DE584002BA528 /* Products */;
+					ProjectRef = 706B0E221F8DE584002BA528 /* AOModalStatus.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				70AC96281F8DD2B500960B51 /* PuppyParadise */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		706B0E271F8DE584002BA528 /* AOModalStatus.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AOModalStatus.framework;
+			remoteRef = 706B0E261F8DE584002BA528 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		70AC96271F8DD2B500960B51 /* Resources */ = {
@@ -142,6 +204,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		706B0E2B1F8DE589002BA528 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AOModalStatus;
+			targetProxy = 706B0E2A1F8DE589002BA528 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		70AC96301F8DD2B500960B51 /* Main.storyboard */ = {
@@ -273,6 +343,7 @@
 		70AC963C1F8DD2B500960B51 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 24LJMF7J23;
@@ -288,6 +359,7 @@
 		70AC963D1F8DD2B500960B51 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 24LJMF7J23;
